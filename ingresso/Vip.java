@@ -11,7 +11,8 @@ public class Vip extends Ingresso{
 
     @Override
     public void imprimirValor() {
-        System.out.println("Ingresso VIP: R$"+ValorVIP());
+        System.out.println("------------------------------------------");
+        System.out.println("Ingresso VIP- \nValor: R$"+ValorVIP());
     }
 
 

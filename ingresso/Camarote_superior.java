@@ -17,6 +17,7 @@ public class Camarote_superior extends Vip{
 
     @Override
     public void imprimirValor() {
-        System.out.println("Ingresso VIP no camarote superior: R$"+valorSup());
+        System.out.println("Camarote superior: R$"+valorSup());
+        System.out.println("------------------------------------------");
     }
 }

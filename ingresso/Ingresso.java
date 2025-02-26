@@ -1,7 +1,7 @@
 package ingresso;
 
 public class Ingresso {
-    private double valor;
+    private double valor=50;
 
     public Ingresso(){}
 
@@ -9,7 +9,7 @@ public class Ingresso {
         this.valor=valor;
     }
     public void imprimirValor(){
-        System.out.println("Valor: R$"+this.valor);
+        System.out.println("Valor: R$"+getValor());
     }
 
     public double getValor() {

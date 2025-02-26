@@ -12,7 +12,9 @@ public class Normal extends Ingresso{
     }
 
     public void imprimirValor() {
-        System.out.println("Ingresso Normal: ");
+        System.out.println("------------------------------------------");
+        System.out.println("Ingresso Normal- ");
         super.imprimirValor();
+        System.out.println("------------------------------------------");
     }
 }
