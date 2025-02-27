@@ -13,9 +13,9 @@ public class Empregado {
 
     @Override
     public String toString() {
-        return String.format("Informações do empregado:\n" +
-                "nome:'" + getNome() +"\n"+
-                "salario:" + getSalario() );
+        return String.format("\n" +
+                "Nome:" + getNome() +"\n"+
+                "Salário: $" + getSalario()+"\n");
     }
 
     public String getNome() {
