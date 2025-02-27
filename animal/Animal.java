@@ -74,6 +74,6 @@ public class Animal {
                 "Numero de patas: %d%n" +
                 "Cor: %s%n" +
                 "Ambiente: %s%n" +
-                "Velocidade média: %.2fm/s%n",nome,comprimento,numeroPatas,cor,ambiente,velocidadeMedia);
+                "Velocidade média: %.2fm/s%n",getNome(),getComprimento(),getNumeroPatas(),getCor(),getAmbiente(),getVelocidadeMedia());
     }
 }
