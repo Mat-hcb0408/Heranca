@@ -1,6 +1,6 @@
 package Heranca_2;
 
-public class Fornecedor extends Pessoa{
+public class Fornecedor extends Pessoa {
     double valorCredito;
     double valorDivida;
 
@@ -26,8 +26,8 @@ public class Fornecedor extends Pessoa{
         this.valorDivida = valorDivida;
     }
 
-    public double obterSaldo(){
-        return valorCredito-valorDivida;
+    public double obterSaldo() {
+        return valorCredito - valorDivida;
     }
 
     @Override
@@ -36,6 +36,6 @@ public class Fornecedor extends Pessoa{
         super.exibirPessoa();
         System.out.printf("Valor do crédito: $%.2f%n" +
                 "Valor da divida: $%.2f%n" +
-                "Saldo: $%.2f%n",valorCredito,valorDivida,obterSaldo());
+                "Saldo: $%.2f%n", valorCredito, valorDivida, obterSaldo());
     }
 }

@@ -4,7 +4,9 @@ public class Pessoa {
     private String nome;
     private String telefone;
     private String endereco;
-    public Pessoa(){}
+
+    public Pessoa() {
+    }
 
     public Pessoa(String nome, String telefone, String endereco) {
         this.nome = nome;
@@ -36,11 +38,11 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
-    public void exibirPessoa(){
+    public void exibirPessoa() {
         System.out.println("=======================================");
         System.out.printf("Nome: %s%n" +
                 "Endereço: %s%n" +
-                "Telefone: %s%n",getNome(),getEndereco(),getTelefone()
+                "Telefone: %s%n", getNome(), getEndereco(), getTelefone()
         );
     }
 }

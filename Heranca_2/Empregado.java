@@ -1,9 +1,9 @@
 package Heranca_2;
 
-public class Empregado extends Pessoa{
+public class Empregado extends Pessoa {
     private int codigoSetor;
     private double salarioBase;
-    private  double imposto;
+    private double imposto;
 
     public Empregado(String nome, String telefone, String endereco, int codigoSetor, double salarioBase, double imposto) {
         super(nome, telefone, endereco);
@@ -11,7 +11,6 @@ public class Empregado extends Pessoa{
         this.salarioBase = salarioBase;
         this.imposto = imposto;
     }
-
 
 
     public int getCodigoSetor() {
@@ -38,8 +37,8 @@ public class Empregado extends Pessoa{
         this.imposto = imposto;
     }
 
-    public double calcularSalario(){
-        return getSalarioBase()-(getSalarioBase()*getImposto()/100);
+    public double calcularSalario() {
+        return getSalarioBase() - (getSalarioBase() * getImposto() / 100);
     }
 
     @Override
@@ -48,6 +47,6 @@ public class Empregado extends Pessoa{
         System.out.printf("Código do setor: %d%n" +
                 "Salario base: $%.2f%n" +
                 "Imposto: %.2f%%%n" +
-                "Salario líquido: $%.2f%n",getCodigoSetor(),getSalarioBase(),getImposto(),calcularSalario());
+                "Salario líquido: $%.2f%n", getCodigoSetor(), getSalarioBase(), getImposto(), calcularSalario());
     }
 }

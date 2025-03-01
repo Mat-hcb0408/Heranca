@@ -1,6 +1,6 @@
 package Heranca_2;
 
-public class Vendedor extends Empregado{
+public class Vendedor extends Empregado {
     private double valorVendas;
     private double comissao;
 
@@ -28,9 +28,9 @@ public class Vendedor extends Empregado{
 
     @Override
     public double calcularSalario() {
-        double salarioBase=super.calcularSalario();
-        double valorComissao=(getComissao()/100)*getValorVendas();
-        return salarioBase+valorComissao;
+        double salarioBase = super.calcularSalario();
+        double valorComissao = (getComissao() / 100) * getValorVendas();
+        return salarioBase + valorComissao;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class Vendedor extends Empregado{
         System.out.println("Vendedor-");
         super.exibirPessoa();
         System.out.printf("Valor das vendas: $%.2f%n" +
-                "Comissão: %.2f%%%n",getValorVendas(),getComissao());
+                "Comissão: %.2f%%%n", getValorVendas(), getComissao());
         System.out.println("=======================================");
     }
 }
